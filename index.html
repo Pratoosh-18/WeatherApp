@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&family=Rubik&display=swap"
+        rel="stylesheet">
+    <title>Weather-App</title>
+</head>
+
+<body>
+
+    <div class="body-container">
+        <div class="weather-box">
+            <div class="weather-input">
+                <div class="location-logo">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="input-box"> <input type="text" id="cityinput" class="cityinputclass"
+                        placeholder="Enter location">
+                </div>
+                <select name="unit" class="units-select" id="unit">
+                    <option value="celsius">C</option>
+                    <option value="fahrenheit">F</option>
+                    <option value="kelvin">K</option>
+                  </select>
+            </div>
+
+            <div class="search-button">
+                <button id="citybutton">
+                    Get Weather
+                </button>
+            </div>
+
+            <div class="weather-image">
+                <div class="image"></div>
+            </div>
+
+            <div class="temp-box">
+
+                <div class="temperature" id="mtemperatureid">
+                    temp
+                </div>
+                <div class="unit" id="unitsSymbol" >
+                    <sup>o</sup>C
+                </div>
+
+            </div>
+
+            <div class="weather-type" id="temptypeid">
+                type
+            </div>
+            <div class="weather-other-details">
+                <div class="humidity weather-other-details-box">
+
+                    <div class="humidity-icon icon">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <div class="values">
+                        <div class="humidity-value-with-unit value-unit">
+
+                            <div class="humidity-value" id="humidityid">
+
+                            </div>
+                            <div class="humidity-unit">
+                                %
+                            </div>
+
+                        </div>
+                        <div class="unit-text">
+                            Humidity
+                        </div>
+                    </div>
+                </div>
+
+                <div class="humidity weather-other-details-box">
+
+                    <div class="wind-icon icon">
+                        <i class="fa-solid fa-wind" height="50px"></i>
+                    </div>
+                    <div class="values">
+                        <div class="wind-value-with-unit value-unit">
+                            <div class="wind-value" id="windid">
+                            </div>
+                            <div class="wind-unit">
+                                Km/h
+                            </div>
+                        </div>
+                        <div class="unit-text">
+                            Wind speed
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
